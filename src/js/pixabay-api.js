@@ -11,7 +11,7 @@ export async function getImagesByQuery(query, page) {
     orientation: 'horizontal',
     safesearch: true,
     page: page, // Передаємо поточну сторінку
-    perPage: 15, // ТЗ: у кожній відповіді повинно приходити 15 об'єктів
+    per_page: 15, // ТЗ: у кожній відповіді повинно приходити 15 об'єктів
   };
 
   // Використовуємо await для асинхронного запиту
