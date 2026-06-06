@@ -21,11 +21,6 @@
   animation: rotation 1s linear infinite;
 }
 
-/* Клас, який ми будемо додавати через JS 
-.loader.is-visible {
-  display: block;
-} */
- 
 @keyframes rotation {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
