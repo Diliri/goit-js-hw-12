@@ -7,6 +7,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 // Знаходимо елементи в DOM
 const galleryContainer = document.querySelector('.gallery');
 const loaderElement = document.querySelector('.loader');
+const loadMoreButton = document.querySelector('.load-more-btn'); // Знаходимо кнопку
 
 // Ініціалізуємо SimpleLightbox один раз поза функціями
 const lightbox = new SimpleLightbox('.gallery a', {
@@ -56,10 +57,20 @@ export function clearGallery() {
 
 // 3. Функція показу лоадера
 export function showLoader() {
-  loaderElement.classList.add('is-visible');
+  loaderElement.classList.remove('hidden');
 }
 
 // 4. Функція приховування лоадера
 export function hideLoader() {
-  loaderElement.classList.remove('is-visible');
+  loaderElement.classList.add('hidden');
+}
+
+// Нова функція: показує кнопку Load more
+export function showLoadMoreButton() {
+  loadMoreButton.classList.remove('hidden');
+}
+
+// Нова функція: ховає кнопку Load more
+export function hideLoadMoreButton() {
+  loadMoreButton.classList.add('hidden');
 }

@@ -21,11 +21,11 @@
   animation: rotation 1s linear infinite;
 }
 
-/* Клас, який ми будемо додавати через JS */
+/* Клас, який ми будемо додавати через JS 
 .loader.is-visible {
   display: block;
-}
-
+} */
+ 
 @keyframes rotation {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -46,3 +46,25 @@
   border: 1px solid #808080;
 }
 /* І так далі для карток... */
+
+/* Клас для приховування елементів */
+.hidden {
+  display: none !important;
+}
+
+/* Приклад стилізації кнопки Load more */
+.load-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background-color: #3b5edb;
+}
