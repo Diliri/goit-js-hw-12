@@ -1,4 +1,4 @@
-/* add latest npm run build
+// add latest npm run build
 
 // npm install axios izitoast simplelightbox
 // Головний файл логіки (src/main.js) з пагінацією та скролом
